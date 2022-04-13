@@ -1,0 +1,82 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html
+{
+    height: 100vh;
+    width: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+#scroller-box
+{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+
+
+
+
+#scroller-outer-box
+{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: absolute;
+    opacity: 0;
+    z-index: 1;
+}
+
+#scroller-inner-box
+{
+    height: 100%;
+    width: calc(100% + 12px);
+    overflow-y: scroll;
+    /* opacity: 0; */
+}
+
+#scroller-plate
+{
+    width: 100%;
+    height: 600%;
+}
+
+
+
+
+
+
+#pseudo-body
+{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 0;
+}
+
+#ball
+{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: calc(50% - 50px);
+    /* transform-origin: 0px 0px; */
+}
+
+#plane
+{
+    position: absolute;
+    width: 100%;
+    height: 0px;
+    top: calc(50% + 50px);
+    border: 2px solid black;
+    box-sizing: border-box;
+}
